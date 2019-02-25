@@ -1,0 +1,178 @@
+unit RepTur;
+
+interface
+
+uses Windows, SysUtils, Messages, Classes, Graphics, Controls,
+  StdCtrls, ExtCtrls, Forms, QuickRpt,  qrpctrls, jpeg, QRCtrls;
+
+type
+  TQRepTur = class(TQuickRep)
+    QRBand1: TQRBand;
+    QRLabel4: TQRLabel;
+    QRImage1: TQRImage;
+    QRLabel15: TQRLabel;
+    QRLabel54: TQRLabel;
+    QRLabel55: TQRLabel;
+    QrlAdiSoyadi: TQRLabel;
+    QrlTelNo: TQRLabel;
+    QrlTarih: TQRLabel;
+    QRLabel37: TQRLabel;
+    QRLabel38: TQRLabel;
+    QRLabel39: TQRLabel;
+    QRLabel40: TQRLabel;
+    QRLabel41: TQRLabel;
+    QRLabel45: TQRLabel;
+    QRLabel53: TQRLabel;
+    QRLabel66: TQRLabel;
+    QRLabel70: TQRLabel;
+    QRLabel75: TQRLabel;
+    QRLabel76: TQRLabel;
+    QRLabel77: TQRLabel;
+    QrlTurBitis: TQRLabel;
+    QrlTurBasNokta: TQRLabel;
+    QrlTurBitNokta: TQRLabel;
+    QrlTurRehberBilgisi: TQRLabel;
+    QrlTurAciklama: TQRLabel;
+    QrlTurYetiskinCocukBebek: TQRLabel;
+    QrlTurYolcuListesi: TQRLabel;
+    QRLabel46: TQRLabel;
+    QRBand2: TQRBand;
+    QRLabel3: TQRLabel;
+    QRLabel5: TQRLabel;
+    QRLabel6: TQRLabel;
+    QRLabel8: TQRLabel;
+    QRLabel9: TQRLabel;
+    QRLabel10: TQRLabel;
+    QRLabel11: TQRLabel;
+    QRLabel12: TQRLabel;
+    QRLabel13: TQRLabel;
+    QRLabel7: TQRLabel;
+    QRLabel14: TQRLabel;
+    QRLabel16: TQRLabel;
+    QRLabel17: TQRLabel;
+    QRLabel18: TQRLabel;
+    QRLabel19: TQRLabel;
+    QRLabel20: TQRLabel;
+    QRLabel21: TQRLabel;
+    QRLabel22: TQRLabel;
+    QRLabel23: TQRLabel;
+    QrlOtelAdi: TQRLabel;
+    QrlOtelAdres: TQRLabel;
+    QrlOtelTelefon: TQRLabel;
+    QrlGirisTarihi: TQRLabel;
+    QrlCikisTarihi: TQRLabel;
+    QrlOdaSayisi: TQRLabel;
+    QrlKonaklamaSekli: TQRLabel;
+    Qrlilgili: TQRLabel;
+    QrlAciklama: TQRLabel;
+    QRShape1: TQRShape;
+    QRShape2: TQRShape;
+    QrlKonaklayacakKisiler: TQRLabel;
+    QRLabel28: TQRLabel;
+    QRLabel56: TQRLabel;
+    QrlOdaKategorisi: TQRLabel;
+    QRBand3: TQRBand;
+    QRLabel25: TQRLabel;
+    QRLabel27: TQRLabel;
+    QRLabel29: TQRLabel;
+    QRLabel30: TQRLabel;
+    QRLabel31: TQRLabel;
+    QRLabel26: TQRLabel;
+    QrlUcusNo1: TQRLabel;
+    QrlKalkisTarihSaat1: TQRLabel;
+    QrlVarisTarihSaat1: TQRLabel;
+    QrlPnr1: TQRLabel;
+    QrlUcakFirmasi1: TQRLabel;
+    QrlUcakFirmasi2: TQRLabel;
+    QrlUcusNo2: TQRLabel;
+    QrlKalkisTarihSaat2: TQRLabel;
+    QrlVarisTarihSaat2: TQRLabel;
+    QrlPnr2: TQRLabel;
+    QRShape3: TQRShape;
+    QRBand4: TQRBand;
+    QRLabel32: TQRLabel;
+    QRLabel47: TQRLabel;
+    QRLabel48: TQRLabel;
+    QRLabel49: TQRLabel;
+    QRLabel50: TQRLabel;
+    QRLabel1: TQRLabel;
+    QRLabel2: TQRLabel;
+    QRLabel24: TQRLabel;
+    QrlTransferAdi: TQRLabel;
+    QrlTransferSoyadi: TQRLabel;
+    QrlTransferCepNo: TQRLabel;
+    QrlTransferAciklama: TQRLabel;
+    QRLabel60: TQRLabel;
+    QRLabel61: TQRLabel;
+    QRLabel62: TQRLabel;
+    QRLabel52: TQRLabel;
+    Transfer: TQRLabel;
+    QRLabel51: TQRLabel;
+    QrlTransferYolcuListesi: TQRLabel;
+    QrlTransferFirma: TQRLabel;
+    QrlTransferArac: TQRLabel;
+    QRShape4: TQRShape;
+    QRBand5: TQRBand;
+    QRLabel33: TQRLabel;
+    QRLabel34: TQRLabel;
+    QRLabel35: TQRLabel;
+    QRLabel36: TQRLabel;
+    QRLabel42: TQRLabel;
+    QRLabel43: TQRLabel;
+    QRLabel44: TQRLabel;
+    QRLabel67: TQRLabel;
+    QRLabel68: TQRLabel;
+    QRLabel69: TQRLabel;
+    QRLabel72: TQRLabel;
+    QRLabel73: TQRLabel;
+    QRLabel74: TQRLabel;
+    QrlTurAdi: TQRLabel;
+    QrlTurFirmasi: TQRLabel;
+    QrlTurBaslangic: TQRLabel;
+    QrlTurKonaklamaSekli: TQRLabel;
+    QrlTurKonaklamaBilgisi: TQRLabel;
+    QrlTurUlasimBilgisi: TQRLabel;
+    QRExpr1: TQRExpr;
+    procedure QRBand2BeforePrint(Sender: TQRCustomBand; var PrintBand: Boolean);
+    procedure QRBand3BeforePrint(Sender: TQRCustomBand; var PrintBand: Boolean);
+    procedure QRBand1BeforePrint(Sender: TQRCustomBand; var PrintBand: Boolean);
+  private
+
+  public
+
+  end;
+
+var
+  QRepTur: TQRepTur;
+
+implementation
+
+uses UntGelir;
+
+
+
+
+
+
+
+{$R *.DFM}
+
+procedure TQRepTur.QRBand1BeforePrint(Sender: TQRCustomBand;
+  var PrintBand: Boolean);
+begin
+PrintBand:=FrmGelir.TmpBool3;
+end;
+
+procedure TQRepTur.QRBand2BeforePrint(Sender: TQRCustomBand;
+  var PrintBand: Boolean);
+begin
+PrintBand:=FrmGelir.TmpBool2;
+end;
+
+procedure TQRepTur.QRBand3BeforePrint(Sender: TQRCustomBand;
+  var PrintBand: Boolean);
+begin
+PrintBand:=FrmGelir.TmpBool1;
+end;
+
+end.

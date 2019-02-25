@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.dfm,D:\Folder Lock\Locker\delphi\programlar\CeremiTravel\UntMesaj.dfm=D:\Folder Lock\Locker\delphi\programlar\CeremiTravel\UntYonetim.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,D:\Folder Lock\Locker\delphi\programlar\CeremiTravel\UntMesaj.pas=D:\Folder Lock\Locker\delphi\programlar\CeremiTravel\UntYonetim.pas</Transaction>
+    <Transaction>2015.12.15 22:30:24.801.pas,G:\Delphi\Programlar\CeremiTravel\Rapor\RepVoucher.pas=G:\Delphi\Programlar\CeremiTravel\Rapor\RepBilet.pas</Transaction>
+    <Transaction>2015.12.15 22:30:24.801.dfm,G:\Delphi\Programlar\CeremiTravel\Rapor\RepVoucher.dfm=G:\Delphi\Programlar\CeremiTravel\Rapor\RepBilet.dfm</Transaction>
+    <Transaction>2015.12.15 22:32:33.013.pas,G:\Delphi\Programlar\CeremiTravel\Rapor\RepVoucher.pas=G:\Delphi\Programlar\CeremiTravel\Rapor\RepTur.pas</Transaction>
+    <Transaction>2015.12.15 22:32:33.013.dfm,G:\Delphi\Programlar\CeremiTravel\Rapor\RepVoucher.dfm=G:\Delphi\Programlar\CeremiTravel\Rapor\RepTur.dfm</Transaction>
+    <Transaction>2015.12.16 19:41:07.017.pas,G:\Delphi\Programlar\CeremiTravel\Rapor\RepTur.pas=G:\Delphi\Programlar\CeremiTravel\Rapor\RepOtel.pas</Transaction>
+    <Transaction>2015.12.16 19:41:07.017.dfm,G:\Delphi\Programlar\CeremiTravel\Rapor\RepTur.dfm=G:\Delphi\Programlar\CeremiTravel\Rapor\RepOtel.dfm</Transaction>
+    <Transaction>2015.12.16 19:42:54.585.pas,G:\Delphi\Programlar\CeremiTravel\Rapor\RepTur.pas=G:\Delphi\Programlar\CeremiTravel\Rapor\RepTransfer.pas</Transaction>
+    <Transaction>2015.12.16 19:42:54.585.dfm,G:\Delphi\Programlar\CeremiTravel\Rapor\RepTur.dfm=G:\Delphi\Programlar\CeremiTravel\Rapor\RepTransfer.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

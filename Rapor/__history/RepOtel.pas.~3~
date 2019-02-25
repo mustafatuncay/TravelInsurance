@@ -1,0 +1,86 @@
+unit RepOtel;
+
+interface
+
+uses Windows, SysUtils, Messages, Classes, Graphics, Controls,
+  StdCtrls, ExtCtrls, Forms, QuickRpt,  qrpctrls, jpeg, QRCtrls;
+
+type
+  TQRepOtel = class(TQuickRep)
+    QRBand5: TQRBand;
+    QRLabel3: TQRLabel;
+    QRLabel5: TQRLabel;
+    QRLabel6: TQRLabel;
+    QRLabel8: TQRLabel;
+    QRLabel9: TQRLabel;
+    QRLabel10: TQRLabel;
+    QRLabel11: TQRLabel;
+    QRLabel12: TQRLabel;
+    QRLabel13: TQRLabel;
+    QRLabel7: TQRLabel;
+    QRLabel14: TQRLabel;
+    QRLabel16: TQRLabel;
+    QRLabel17: TQRLabel;
+    QRLabel18: TQRLabel;
+    QRLabel19: TQRLabel;
+    QRLabel20: TQRLabel;
+    QRLabel21: TQRLabel;
+    QRLabel22: TQRLabel;
+    QRLabel23: TQRLabel;
+    QrlOtelAdi: TQRLabel;
+    QrlOtelAdres: TQRLabel;
+    QrlOtelTelefon: TQRLabel;
+    QrlGirisTarihi: TQRLabel;
+    QrlCikisTarihi: TQRLabel;
+    QrlOdaSayisi: TQRLabel;
+    QrlKonaklamaSekli: TQRLabel;
+    Qrlilgili: TQRLabel;
+    QrlAciklama: TQRLabel;
+    QRShape2: TQRShape;
+    QrlKonaklayacakKisiler: TQRLabel;
+    QRLabel28: TQRLabel;
+    QRLabel56: TQRLabel;
+    QrlOdaKategorisi: TQRLabel;
+    procedure QRBand2BeforePrint(Sender: TQRCustomBand; var PrintBand: Boolean);
+    procedure QRBand3BeforePrint(Sender: TQRCustomBand; var PrintBand: Boolean);
+    procedure QRBand1BeforePrint(Sender: TQRCustomBand; var PrintBand: Boolean);
+  private
+
+  public
+
+  end;
+
+var
+  QRepOtel: TQRepOtel;
+
+implementation
+
+uses UntGelir;
+
+
+
+
+
+
+
+{$R *.DFM}
+
+procedure TQRepOtel.QRBand1BeforePrint(Sender: TQRCustomBand;
+  var PrintBand: Boolean);
+begin
+PrintBand:=FrmGelir.TmpBool3;
+end;
+
+procedure TQRepOtel.QRBand2BeforePrint(Sender: TQRCustomBand;
+  var PrintBand: Boolean);
+begin
+PrintBand:=FrmGelir.TmpBool2;
+end;
+
+procedure TQRepOtel.QRBand3BeforePrint(Sender: TQRCustomBand;
+  var PrintBand: Boolean);
+begin
+PrintBand:=FrmGelir.TmpBool1;
+end;
+
+end.

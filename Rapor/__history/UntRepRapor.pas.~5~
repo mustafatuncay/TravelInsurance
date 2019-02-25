@@ -1,0 +1,27 @@
+unit UntRepRapor;
+
+interface
+
+uses Windows, SysUtils, Messages, Classes, Graphics, Controls,
+  StdCtrls, ExtCtrls, Forms, QuickRpt, QRCtrls, jpeg;
+
+type
+  TRepRapor = class(TQuickRep)
+    QRBPHeader: TQRBand;
+  private
+
+  public
+
+  end;
+
+var
+  RepRapor: TRepRapor;
+
+implementation
+
+
+
+
+
+{$R *.DFM}
+end.

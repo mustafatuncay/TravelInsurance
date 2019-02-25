@@ -1,0 +1,81 @@
+object FrmOnay: TFrmOnay
+  Left = 604
+  Top = 232
+  BorderStyle = bsDialog
+  ClientHeight = 191
+  ClientWidth = 273
+  Color = 15263976
+  Font.Charset = TURKISH_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 100
+    Top = 11
+    Width = 66
+    Height = 30
+    Align = alCustom
+    Alignment = taCenter
+    Caption = 'ONAY'
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = 6052956
+    Font.Height = -24
+    Font.Name = 'Franklin Gothic Heavy'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Panel1: TPanel
+    Left = 1
+    Top = 48
+    Width = 271
+    Height = 141
+    BevelOuter = bvNone
+    Color = clWhite
+    TabOrder = 0
+    object lblCaption: TLabel
+      Left = 0
+      Top = 40
+      Width = 269
+      Height = 58
+      Alignment = taCenter
+      AutoSize = False
+      Caption = '-------'
+      Font.Charset = TURKISH_CHARSET
+      Font.Color = clRed
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+      WordWrap = True
+    end
+    object Button1: TButton
+      Left = 17
+      Top = 93
+      Width = 96
+      Height = 37
+      Caption = 'EVET'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 161
+      Top = 93
+      Width = 96
+      Height = 37
+      Caption = 'HAYIR'
+      TabOrder = 1
+      OnClick = Button2Click
+    end
+  end
+end

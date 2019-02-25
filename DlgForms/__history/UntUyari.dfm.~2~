@@ -1,0 +1,73 @@
+object FrmUyari: TFrmUyari
+  Left = 342
+  Top = 266
+  AutoSize = True
+  BorderStyle = bsDialog
+  ClientHeight = 205
+  ClientWidth = 318
+  Color = 15263976
+  Font.Charset = TURKISH_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 0
+    Top = 0
+    Width = 318
+    Height = 42
+    Align = alCustom
+    Alignment = taCenter
+    Caption = 'UYARI'
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = 6052956
+    Font.Height = -24
+    Font.Name = 'Franklin Gothic Heavy'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 48
+    Width = 318
+    Height = 157
+    BevelOuter = bvNone
+    Color = clWhite
+    TabOrder = 0
+    object lblCaption: TLabel
+      Left = 3
+      Top = 9
+      Width = 315
+      Height = 96
+      Alignment = taCenter
+      AutoSize = False
+      Caption = '-------'
+      Font.Charset = TURKISH_CHARSET
+      Font.Color = clRed
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+      WordWrap = True
+    end
+    object Button1: TButton
+      Left = 92
+      Top = 111
+      Width = 121
+      Height = 37
+      Caption = 'TAMAM'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+  end
+end

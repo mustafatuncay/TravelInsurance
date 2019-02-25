@@ -1,0 +1,318 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{966AD464-41CB-4302-934F-1134B6DBDC0C}</ProjectGuid>
+			<ProjectVersion>16.0</ProjectVersion>
+			<MainSource>CeremiTravel.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<Base>True</Base>
+			<TargetedPlatforms>1</TargetedPlatforms>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UsePackage>vclx;vcl;dbrtl;Rave76VCL;bdertl;rtl;vclactnband;vcldb;vcldbx;dsnap;dsnapcon;TeeUI;TeeDB;Tee;adortl;vclib;ibxpress;IndyCore;IndySystem;IndyProtocols;xmlrtl;inet;intrawebdb_100_120;Intraweb_100_120;VclSmp;vclie;websnap;webdsnap;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;DataSnapServer;DbxClientDriver;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;DBXSybaseASEDriver;DBXSybaseASADriver;DBXOracleDriver;DBXMSSQLDriver;DBXInformixDriver;DBXDb2Driver;tmsd2009;tmsexd2009;tmsxlsd2009;tmswizd2009;gtRtlD12;gtDocEngD12;gtQRExpD12;QR5Run_RAD6;Jcl;ZComponent;ZDbc;ZPlain;ZCore;ZParseSql;SynEdit_R2009;uniGUI12;uniGUI12Ex;uniGUI12Chart;frxDB12;fsDB12;fs12;frx12;frxTee12;frxe12;frxADO12</DCC_UsePackage>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<SanitizedProjectName>CeremiTravel</SanitizedProjectName>
+			<DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;Data.Win;Xml.Win;System.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<DCC_DependencyCheckOutputName>CeremiTravel.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>0</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="CeremiTravel.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="UntMenu.pas">
+				<Form>FrmMenu</Form>
+			</DCCReference>
+			<DCCReference Include="UntMusteriKayitListe.pas">
+				<Form>FrmMusteriKayitListe</Form>
+			</DCCReference>
+			<DCCReference Include="UntDm.pas">
+				<Form>Dm</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="genel\UntGlobal.pas"/>
+			<DCCReference Include="UntGelir.pas">
+				<Form>FrmGelir</Form>
+			</DCCReference>
+			<DCCReference Include="DlgForms\UntOnay.pas">
+				<Form>FrmOnay</Form>
+			</DCCReference>
+			<DCCReference Include="UntSabitDegerler.pas">
+				<Form>FrmSabitDegerler</Form>
+			</DCCReference>
+			<DCCReference Include="DlgForms\UntUyari.pas">
+				<Form>FrmUyari</Form>
+			</DCCReference>
+			<DCCReference Include="UntRapor.pas">
+				<Form>FrmRapor</Form>
+			</DCCReference>
+			<DCCReference Include="Rapor\UntRepRapor.pas">
+				<Form>RepRapor</Form>
+				<DesignClass>TQuickRep</DesignClass>
+			</DCCReference>
+			<DCCReference Include="genel\UntProjectGlobal.pas"/>
+			<DCCReference Include="UntKrediKarti.pas">
+				<Form>FrmKrediKarti</Form>
+			</DCCReference>
+			<DCCReference Include="UntGiris.pas">
+				<Form>FrmGiris</Form>
+			</DCCReference>
+			<DCCReference Include="UntMesaj.pas">
+				<Form>FrmMesaj</Form>
+			</DCCReference>
+			<DCCReference Include="Rapor\RepAgenteSatis.pas">
+				<Form>QRepAgenteSatis</Form>
+				<DesignClass>TQuickRep</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UntObsiyonlar.pas">
+				<Form>FrmObsiyonlar</Form>
+			</DCCReference>
+			<DCCReference Include="UntKrediKartDetay.pas">
+				<Form>FrmKrediKartDetay</Form>
+			</DCCReference>
+			<DCCReference Include="UntSigortalar.pas">
+				<Form>FrmSigortalar</Form>
+			</DCCReference>
+			<DCCReference Include="UntSigortaislemleri.pas">
+				<Form>FrmSigortaislemleri</Form>
+			</DCCReference>
+			<DCCReference Include="UntGelirGiderRapor.pas">
+				<Form>FrmGelirGiderRapor</Form>
+			</DCCReference>
+			<DCCReference Include="UntSigortaSuresi.pas">
+				<Form>FrmSigortaSuresi</Form>
+			</DCCReference>
+			<DCCReference Include="UntGelirGiderKayit.pas">
+				<Form>FrmGelirGiderKayit</Form>
+			</DCCReference>
+			<DCCReference Include="UntSigortaHesapRapor.pas">
+				<Form>FrmSigortaHesapRapor</Form>
+			</DCCReference>
+			<DCCReference Include="UntMusteriKayit.pas">
+				<Form>FrmMusteriKayit</Form>
+			</DCCReference>
+			<DCCReference Include="Rapor\RepFatura.pas">
+				<Form>QRepFatura</Form>
+				<DesignClass>TQuickRep</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Rapor\RepBilet.pas">
+				<Form>QRepBilet</Form>
+				<DesignClass>TQuickRep</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UntSirketGelirGiderKayit.pas">
+				<Form>FrmSirketGelirGiderKayit</Form>
+			</DCCReference>
+			<DCCReference Include="UntTurFirma.pas">
+				<Form>FrmTurFirma</Form>
+			</DCCReference>
+			<DCCReference Include="UntSirketGelirGiderListe.pas">
+				<Form>FrmSirketGelirGiderListe</Form>
+			</DCCReference>
+			<DCCReference Include="UntTurFirmaListe.pas">
+				<Form>FrmTurFirmaListe</Form>
+			</DCCReference>
+			<DCCReference Include="UntOtelKayitListe.pas">
+				<Form>FrmOtelKayitListe</Form>
+			</DCCReference>
+			<DCCReference Include="UntHesap.pas">
+				<Form>FrmHesap</Form>
+			</DCCReference>
+			<DCCReference Include="UntAjandaListe.pas">
+				<Form>FrmAjandaListe</Form>
+			</DCCReference>
+			<DCCReference Include="UntAjandaKayit.pas">
+				<Form>FrmAjandaKayit</Form>
+			</DCCReference>
+			<DCCReference Include="UntTransferFirmaListe.pas">
+				<Form>FrmTransferFirmaListe</Form>
+			</DCCReference>
+			<DCCReference Include="UntTransferFirma.pas">
+				<Form>FrmTransferFirma</Form>
+			</DCCReference>
+			<DCCReference Include="Rapor\RepGelirGiderMusteri.pas">
+				<Form>QRepGelirGiderMusteri</Form>
+				<DesignClass>TQuickRep</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UntOtelKayit.pas">
+				<Form>FrmOtelKayit</Form>
+			</DCCReference>
+			<DCCReference Include="UntYonetim.pas">
+				<Form>FrmYonetim</Form>
+			</DCCReference>
+			<DCCReference Include="Rapor\RepOtel.pas">
+				<Form>QRepOtel</Form>
+				<DesignClass>TQuickRep</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Rapor\RepVoucher.pas">
+				<Form>QRepVoucher</Form>
+				<DesignClass>TQuickRep</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Rapor\RepTransfer.pas">
+				<Form>QRepTransfer</Form>
+				<DesignClass>TQuickRep</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Rapor\RepTur.pas">
+				<Form>QRepTur</Form>
+				<DesignClass>TQuickRep</DesignClass>
+			</DCCReference>
+			<None Include="ModelSupport_ErinTourism\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntUyari\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntGelir\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntRapor\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntOnay\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntMenu\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntGlobal\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntMusteriKayit\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\ErinTourism\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntSabitDegerler\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntGiderler\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\UntDm\default.txvpck"/>
+			<None Include="ModelSupport_ErinTourism\ErinTourism\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntKrediKartDetay\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntKrediKarti\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntProjectGlobal\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntGlobal\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntRepRapor\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntGelir\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntGiris\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntMenu\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\CeremiTravel\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntObsiyonlar\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntSigortalar\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntSigortaHesapRapor\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntYedek\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntDm\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntGiderler\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntOnay\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntSigortaislemleri\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntSabitDegerler\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntSigortaSuresi\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntYonetim\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntUyari\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\RepFatura\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntMusteriKayit\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\RepSatis\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntRapor\default.txvpck"/>
+			<None Include="ModelSupport_CeremiTravel\UntGiderler\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntUyari\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntSigortaSuresi\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntYonetim\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntGlobal\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntSigortalar\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntSigortaislemleri\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntYedek\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntRapor\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntGiris\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntObsiyonlar\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntSabitDegerler\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntKrediKarti\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntMenu\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\CeremiTravel\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntOnay\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntProjectGlobal\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntGelir\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntDm\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\RepSatis\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntKrediKartDetay\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntSigortaHesapRapor\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntRepRapor\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\RepFatura\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\UntMusteriKayit\default.txaPackage"/>
+			<None Include="ModelSupport_CeremiTravel\RepVoucher\default.txaPackage"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">CeremiTravel.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1033</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<ModelSupport>True</ModelSupport>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+					<Platform value="Win64">False</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

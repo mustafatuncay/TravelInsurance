@@ -1,0 +1,81 @@
+unit RepVoucher;
+
+interface
+
+uses Windows, SysUtils, Messages, Classes, Graphics, Controls,
+  StdCtrls, ExtCtrls, Forms, QuickRpt,  qrpctrls, jpeg, QRCtrls;
+
+type
+  TQRepVoucher = class(TQuickRep)
+    QRBand1: TQRBand;
+    QRLabel4: TQRLabel;
+    QRImage1: TQRImage;
+    QRLabel15: TQRLabel;
+    QRLabel54: TQRLabel;
+    QRLabel55: TQRLabel;
+    QrlAdiSoyadi: TQRLabel;
+    QrlTelNo: TQRLabel;
+    QrlTarih: TQRLabel;
+    QRLabel37: TQRLabel;
+    QRLabel38: TQRLabel;
+    QRLabel39: TQRLabel;
+    QRLabel40: TQRLabel;
+    QRLabel41: TQRLabel;
+    QRLabel45: TQRLabel;
+    QRLabel53: TQRLabel;
+    QRLabel66: TQRLabel;
+    QRLabel70: TQRLabel;
+    QRLabel75: TQRLabel;
+    QRLabel76: TQRLabel;
+    QRLabel77: TQRLabel;
+    QrlTurBitis: TQRLabel;
+    QrlTurBasNokta: TQRLabel;
+    QrlTurBitNokta: TQRLabel;
+    QrlTurRehberBilgisi: TQRLabel;
+    QrlTurAciklama: TQRLabel;
+    QrlTurYetiskinCocukBebek: TQRLabel;
+    QrlTurYolcuListesi: TQRLabel;
+    QRLabel46: TQRLabel;
+    procedure QRBand2BeforePrint(Sender: TQRCustomBand; var PrintBand: Boolean);
+    procedure QRBand3BeforePrint(Sender: TQRCustomBand; var PrintBand: Boolean);
+    procedure QRBand1BeforePrint(Sender: TQRCustomBand; var PrintBand: Boolean);
+  private
+
+  public
+
+  end;
+
+var
+  QRepVoucher: TQRepVoucher;
+
+implementation
+
+uses UntGelir;
+
+
+
+
+
+
+
+{$R *.DFM}
+
+procedure TQRepVoucher.QRBand1BeforePrint(Sender: TQRCustomBand;
+  var PrintBand: Boolean);
+begin
+PrintBand:=FrmGelir.TmpBool3;
+end;
+
+procedure TQRepVoucher.QRBand2BeforePrint(Sender: TQRCustomBand;
+  var PrintBand: Boolean);
+begin
+PrintBand:=FrmGelir.TmpBool2;
+end;
+
+procedure TQRepVoucher.QRBand3BeforePrint(Sender: TQRCustomBand;
+  var PrintBand: Boolean);
+begin
+PrintBand:=FrmGelir.TmpBool1;
+end;
+
+end.
